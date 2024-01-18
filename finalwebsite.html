@@ -79,6 +79,34 @@
             width: 100%;
             height: 15px;
         }
+
+        
+        /* Media queries for mobile devices */
+        @media only screen and (max-width: 600px) {
+            .flex-container {
+                flex-direction: column; /* Change to vertical layout */
+            }
+
+            .left, .center, .right {
+                flex: 1; /* Equal width for all panels */
+            }
+
+            .header {
+                height: auto; /* Adjust height to fit content */
+            }
+
+            .header h1 {
+                font-size: 24px; /* Increase font size for smaller screens */
+            }
+
+            .left, .right {
+                font-size: 18px; /* Decrease font size for smaller screens */
+            }
+
+            .gallery {
+                width: 100%; /* Adjust width to fit smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
